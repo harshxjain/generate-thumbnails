@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+
+{% block title %}Upload Image{% endblock %}
+
+{% block body %}
+<h2>Create Thumbnails</h2>
+<p>Upload images and download their respective thumbnails</p>
+<form action='/', method="POST", enctype="multipart/form-data">
+   <input type="file" name="image" multiple>
+   <button type="submit">Create Thumbnails</button>
+</form>
+{% endblock %}
